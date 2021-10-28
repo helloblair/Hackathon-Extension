@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Movie Aficionado", 
-  "description": "Movie Quote Extension by Dan Nguyen and Kirsten Coronado",
+  "description": "Movie Quote Extension",
   "version": "1.0",
-
+  "author": "Dan Nguyen and Kirsten Coronado",
   "browser_action": {
    "default_icon": "ext-icon2.png"
   },
@@ -12,5 +12,10 @@
     "newTab": "tab.html"
   },
 
-  "permissions": ["activeTab"]
+  "permissions": ["storage", "tabs", "https://api.hackernoon.com"],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
 }

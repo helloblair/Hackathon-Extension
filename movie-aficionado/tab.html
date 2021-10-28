@@ -1,36 +1,63 @@
-<!DOCTYPE html>
+<!-- <<!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, intial-scale=1">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style>
+    * {
+      box-sizing: border-box;
+  }
+  body{
+	/* bg-img and bg-color not working, fix this!!
+	background-image: url("https://images.unsplash.com/photo-1505635552518-3448ff116af3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGZvcmVzdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-color: #000000; */
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+  }
+  .content {
+    position: fixed;
+    bottom: 1;
+    background: rgb(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 20%;
+    padding: 5px;
+  }
+  </style>
 	<title>Movie Aficionado</title>
 
 
-	<!-- our files -->
-	<link rel="stylesheet" href="css/momentum.css" type="text/css">
+	<link rel="stylesheet" href="styles.css" type="text/css">
 
 	<script src="js/movie-quote.js"></script>
 	<script src="js/tab.js"></script>
 	
 </head>
 <body>
-	<!-- YOUR HTML IN HERE 
-	<div class="bg-wrapper">
-		<div class ="text-right top-right weather">
-			<div><i class="wi wi-day-sunny"></i>&nbsp;<span id="weather"></span>&#8451;</div>	
-			<h5 id="location"></h5>
-		</div>
-		<div class ="text-center centered">
-				<div class="block-text">
-					<h1 id="time"></h1><h2 id="ampm"></h2>
-				</div>
-				<h3 id="greetings"></h3>
-		</div>
-		<div class ="text-center bottom-third quote">
-				<div id="quote-text"></div>
-		</div>
-	</div>
-	<script src="js/start.js"></script>
--->
+  <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+    <iframe width="100%" height ="100%" src="https://www.youtube.com/embed/WPni755-Krg?autoplay=1"; frameborder ="0" allow="autoplay; encrypted-media"
+    allowfullscreen></iframe>
+  </div>
+<div class="content">
+  <h1>Test</h1>
+  <p>Test2</p>
+</div>
+
 </body>
+</html>>
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Aficionado</title>
+    <meta name="description" content="THE Movie Quotes Extension"
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="quotes"></div>
+    <script src="tab.js"></script>
+  </body>
 </html>
