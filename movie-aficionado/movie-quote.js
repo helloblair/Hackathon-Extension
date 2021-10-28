@@ -17,3 +17,33 @@
 //     });
 //   }
 // };
+
+//GET
+fetch("https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=famous&count=10", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "andruxnet-random-famous-quotes.p.rapidapi.com",
+		"x-rapidapi-key": "f4a3bf37d9mshea179a8d1b02ad6p155b59jsn5e38c3ea6dd6"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
+
+//POST
+fetch("https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=movies&count=10", {
+	"method": "POST",
+	"headers": {
+		"x-rapidapi-host": "andruxnet-random-famous-quotes.p.rapidapi.com",
+		"x-rapidapi-key": "f4a3bf37d9mshea179a8d1b02ad6p155b59jsn5e38c3ea6dd6"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
