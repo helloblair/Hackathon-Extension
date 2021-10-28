@@ -12,7 +12,7 @@
     "newTab": "tab.html"
   },
 
-  "permissions": ["storage", "tabs", "https://api.hackernoon.com"],
+  "permissions": ["tabs"],
 
   "background": {
     "scripts": ["background.js"],
