@@ -1,34 +1,16 @@
 {
   "manifest_version": 2,
-  "background": {
-    "service_worker": "background.js"
-  },
-
-  "name": "The Great Extension", 
-  "description": "This extension will do... something",
+  "name": "Movie Aficionado", 
+  "description": "Movie Quote Extension by Dan Nguyen and Kirsten Coronado",
   "version": "1.0",
 
   "browser_action": {
-   "default_icon": "ext-icon.png",
-   "default_popup": "popup.html"
-  },
-  "permissions": ["storage", "activeTab", "scripting"],
-
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "/images/get_started16.png",
-      "32": "/images/get_started32.png",
-      "48": "/images/get_started48.png",
-      "128": "/images/get_started128.png"
-    }
-  },
-  "icons": {
-    "16": "/images/get_started16.png",
-    "32": "/images/get_started32.png",
-    "48": "/images/get_started48.png",
-    "128": "/images/get_started128.png"
+   "default_icon": "ext-icon.png"
   },
   
-  "options_page": "options.html"
+  "chrome_url_overrides" : {
+    "newTab": "options.html"
+  },
+
+  "permissions": ["activeTab"]
 }
