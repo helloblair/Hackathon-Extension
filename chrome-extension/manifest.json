@@ -9,7 +9,7 @@
   },
   
   "chrome_url_overrides" : {
-    "newTab": "options.html"
+    "newTab": "tab.html"
   },
 
   "permissions": ["activeTab"]
